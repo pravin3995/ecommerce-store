@@ -44,7 +44,8 @@ model Product {
   shortDescription String
   description      String
   priceCents       Int
-  currency         String  @default("inr")
+  // Default is unused: the seed and checkout always set currency explicitly (CURRENCY in lib/constants.ts).
+  currency         String  @default("usd")
   stockQty         Int     @default(0)
   images           String // JSON-encoded string[]
   specs            String // JSON-encoded { [key]: string }
@@ -92,7 +93,8 @@ model Order {
   subtotalCents Int
   shippingCents Int
   totalCents    Int
-  currency      String @default("inr")
+  // Default is unused: the seed and checkout always set currency explicitly (CURRENCY in lib/constants.ts).
+  currency      String @default("usd")
 
   stripeCheckoutSessionId String? @unique
   stripePaymentIntentId   String?
