@@ -122,8 +122,9 @@ tests/e2e/      Playwright
 - **The Stripe webhook is the only thing that ever sets an order to
   `PAID`.** The `/checkout/success` redirect page only displays status — it
   never trusts the redirect itself as proof of payment.
-- **Currency is USD**, independent of the navy/gold visual theme, to avoid
-  India-specific Stripe test-mode quirks unrelated to the actual ask.
+- **Currency is INR** (₹), for an Indian storefront. Amounts are stored in
+  paise in the `*Cents` columns; shipping is ₹99, free over ₹999, and Stripe
+  Checkout collects Indian shipping addresses only.
 - All product/category photography is sourced from Pexels (free-to-use
   stock), resized locally, and reviewed for readable competitor branding
   before inclusion — none of it depicts real Voltrix products, since

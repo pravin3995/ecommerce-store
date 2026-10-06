@@ -84,7 +84,7 @@ export async function createCheckoutSession(
               },
             ]
           : undefined,
-      shipping_address_collection: { allowed_countries: ["US"] },
+      shipping_address_collection: { allowed_countries: ["IN"] },
       success_url: `${baseUrl}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${baseUrl}/checkout/cancel`,
       metadata: { orderId: order.id, orderNumber },

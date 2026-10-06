@@ -86,7 +86,7 @@ const products: ProductSeed[] = [
     shortDescription: "32-bit development board with familiar Uno-style pinout.",
     description:
       "A 32-bit development board built around a widely-supported open toolchain, with the same header layout as the classic Uno form factor so existing shields drop right on. Ideal for coursework, sensor prototyping and small automation projects.",
-    priceCents: 1899,
+    priceCents: 160900,
     stockQty: 86,
     isFeatured: true,
     specs: {
@@ -106,7 +106,7 @@ const products: ProductSeed[] = [
     shortDescription: "Compact high-performance board for battery-powered projects.",
     description:
       "A compact, high-clock-speed board with onboard LiPo charging, built for wearables and battery-powered sensor nodes that need real compute headroom in a small footprint.",
-    priceCents: 2299,
+    priceCents: 194900,
     stockQty: 54,
     specs: {
       "Microcontroller": "32-bit ARM Cortex-M4",
@@ -124,7 +124,7 @@ const products: ProductSeed[] = [
     shortDescription: "Dual-core microcontroller board with programmable I/O.",
     description:
       "A low-cost dual-core board with programmable I/O state machines for precise timing-critical tasks — bit-banged protocols, signal generation and more — alongside general-purpose GPIO for everyday projects.",
-    priceCents: 599,
+    priceCents: 50900,
     stockQty: 210,
     isFeatured: true,
     specs: {
@@ -143,7 +143,7 @@ const products: ProductSeed[] = [
     shortDescription: "WiFi + Bluetooth board for connected sensor projects.",
     description:
       "An integrated WiFi and Bluetooth Low Energy board for connected sensor nodes, home automation and cloud-telemetry projects. Deep-sleep modes keep battery projects running for months.",
-    priceCents: 799,
+    priceCents: 67900,
     stockQty: 128,
     specs: {
       "Wireless": "WiFi 802.11 b/g/n + BLE 5.0",
@@ -161,7 +161,7 @@ const products: ProductSeed[] = [
     shortDescription: "Breadboard-friendly micro board for tight spaces.",
     description:
       "A breadboard-friendly micro board that fits into projects where every millimeter counts, without giving up a full set of analog and digital pins.",
-    priceCents: 999,
+    priceCents: 84900,
     stockQty: 73,
     specs: {
       "Microcontroller": "8-bit AVR",
@@ -179,7 +179,7 @@ const products: ProductSeed[] = [
     shortDescription: "High pin-count board for complex multi-sensor builds.",
     description:
       "A high pin-count board for projects that have outgrown a standard Uno-class layout — multi-axis CNC controllers, sensor arrays and large shield stacks.",
-    priceCents: 2499,
+    priceCents: 211900,
     stockQty: 41,
     specs: {
       "Digital I/O": "54 pins",
@@ -199,7 +199,7 @@ const products: ProductSeed[] = [
     shortDescription: "Temperature, humidity and pressure in one module.",
     description:
       "A precision environmental sensor combining temperature, relative humidity and barometric pressure in a single I2C/SPI module — a staple for weather stations and indoor air-quality projects.",
-    priceCents: 699,
+    priceCents: 58900,
     stockQty: 165,
     isFeatured: true,
     specs: {
@@ -218,7 +218,7 @@ const products: ProductSeed[] = [
     shortDescription: "Passive infrared sensor for motion-triggered projects.",
     description:
       "A passive infrared motion sensor with adjustable sensitivity and delay trimmers — drop it into security lighting, occupancy counters or motion-triggered cameras.",
-    priceCents: 349,
+    priceCents: 29900,
     stockQty: 190,
     specs: {
       "Detection Range": "up to 7 m",
@@ -236,7 +236,7 @@ const products: ProductSeed[] = [
     shortDescription: "Accurate non-contact distance measurement.",
     description:
       "A reliable ultrasonic ranging module for obstacle avoidance, liquid-level sensing and parking-assist style projects, with stable readings from 2cm to 4m.",
-    priceCents: 399,
+    priceCents: 33900,
     stockQty: 142,
     specs: {
       "Range": "2 cm – 400 cm",
@@ -254,7 +254,7 @@ const products: ProductSeed[] = [
     shortDescription: "3-axis gyroscope and accelerometer on one chip.",
     description:
       "A 6-axis inertial measurement unit combining a 3-axis gyroscope and 3-axis accelerometer, ideal for self-balancing robots, drones and motion-tracking wearables.",
-    priceCents: 449,
+    priceCents: 37900,
     stockQty: 118,
     specs: {
       "Axes": "3-axis gyro + 3-axis accel",
@@ -272,7 +272,7 @@ const products: ProductSeed[] = [
     shortDescription: "Capacitive sensor for automated watering projects.",
     description:
       "A corrosion-resistant capacitive soil moisture sensor for garden automation and greenhouse monitoring — outlasts the resistive probes that corrode within weeks.",
-    priceCents: 549,
+    priceCents: 46900,
     stockQty: 97,
     specs: {
       "Sensing Type": "Capacitive",
@@ -290,7 +290,7 @@ const products: ProductSeed[] = [
     shortDescription: "13.56MHz RFID/NFC reader with card and fob included.",
     description:
       "A 13.56MHz RFID reader/writer module for access-control and inventory-tagging projects, bundled with a sample card and key fob to get started immediately.",
-    priceCents: 649,
+    priceCents: 54900,
     stockQty: 88,
     specs: {
       "Frequency": "13.56 MHz",
@@ -310,7 +310,7 @@ const products: ProductSeed[] = [
     shortDescription: "Regulated bench supply with USB-C PD input.",
     description:
       "A clean, regulated 5V/3A bench supply that takes any USB-C PD charger as input and outputs stable power through screw terminals and a barrel jack — no wall-wart hunting required.",
-    priceCents: 1499,
+    priceCents: 126900,
     stockQty: 64,
     isFeatured: true,
     specs: {
@@ -329,7 +329,7 @@ const products: ProductSeed[] = [
     shortDescription: "Step-down converter with onboard trim pot.",
     description:
       "A compact step-down converter module with an onboard trim potentiometer for dialing in exactly the voltage a downstream sensor or board needs.",
-    priceCents: 299,
+    priceCents: 24900,
     stockQty: 176,
     specs: {
       "Input Range": "4V–40V",
@@ -347,7 +347,7 @@ const products: ProductSeed[] = [
     shortDescription: "Single-cell lithium charger with protection circuit.",
     description:
       "A single-cell 18650 charging module with over-charge, over-discharge and short-circuit protection built in — a safe foundation for any battery-powered build.",
-    priceCents: 199,
+    priceCents: 16900,
     stockQty: 240,
     specs: {
       "Cell Type": "18650 Li-ion",
@@ -365,7 +365,7 @@ const products: ProductSeed[] = [
     shortDescription: "PWM solar controller for small off-grid setups.",
     description:
       "A PWM solar charge controller sized for small panels and battery banks — weather station power, remote sensor nodes and hobby off-grid projects.",
-    priceCents: 1899,
+    priceCents: 160900,
     stockQty: 38,
     specs: {
       "Type": "PWM",
@@ -383,7 +383,7 @@ const products: ProductSeed[] = [
     shortDescription: "Step-up converter for low-voltage battery projects.",
     description:
       "A step-up converter that turns a couple of AA batteries or a single Li-ion cell into a stable 5V or 9V rail for boards that need more than the battery alone provides.",
-    priceCents: 249,
+    priceCents: 20900,
     stockQty: 155,
     specs: {
       "Input Range": "0.9V–5V",
@@ -403,7 +403,7 @@ const products: ProductSeed[] = [
     shortDescription: "Crisp monochrome OLED for compact readouts.",
     description:
       "A crisp 128x64 monochrome OLED that draws almost no power on dark backgrounds — perfect for battery-powered status displays and compact instrument panels.",
-    priceCents: 599,
+    priceCents: 50900,
     stockQty: 134,
     isFeatured: true,
     specs: {
@@ -422,7 +422,7 @@ const products: ProductSeed[] = [
     shortDescription: "Classic character LCD with backlight.",
     description:
       "The classic 16x2 character LCD with blue backlight — dead simple to drive and instantly readable, a reliable default for menus, sensor readouts and clocks.",
-    priceCents: 449,
+    priceCents: 37900,
     stockQty: 168,
     specs: {
       "Characters": "16 columns x 2 rows",
@@ -440,7 +440,7 @@ const products: ProductSeed[] = [
     shortDescription: "60 individually addressable RGB LEDs per meter.",
     description:
       "A one-meter strip of 60 individually addressable RGB LEDs, controllable over a single data line — build ambient lighting, VU meters or animated signage.",
-    priceCents: 1299,
+    priceCents: 109900,
     stockQty: 92,
     specs: {
       "LED Count": "60 per meter",
@@ -458,7 +458,7 @@ const products: ProductSeed[] = [
     shortDescription: "4-digit display with onboard driver chip.",
     description:
       "A 4-digit 7-segment display with an onboard driver IC, so you control it over just two data pins instead of wrangling a dozen segment lines directly.",
-    priceCents: 399,
+    priceCents: 33900,
     stockQty: 121,
     specs: {
       "Digits": "4",
@@ -476,7 +476,7 @@ const products: ProductSeed[] = [
     shortDescription: "Full-color resistive touchscreen with SD slot.",
     description:
       "A full-color resistive touchscreen with an onboard microSD slot for loading bitmaps and fonts — enough screen real estate for real UI, not just numbers.",
-    priceCents: 1699,
+    priceCents: 143900,
     stockQty: 47,
     specs: {
       "Resolution": "320 x 240",
@@ -496,7 +496,7 @@ const products: ProductSeed[] = [
     shortDescription: "Assorted JST-PH plugs, sockets and crimp pins.",
     description:
       "An assortment of 2-, 3- and 4-pin JST-PH housings, sockets and crimp pins for building clean, polarized battery and sensor connections that won't pull loose.",
-    priceCents: 999,
+    priceCents: 84900,
     stockQty: 112,
     specs: {
       "Pitch": "2.0 mm",
@@ -513,7 +513,7 @@ const products: ProductSeed[] = [
     shortDescription: "USB-C cable with exposed power/data test points.",
     description:
       "A USB-C cable with exposed power and data test points, so you can probe voltage, tap into data lines, or solder in a custom power path without hacking apart a good cable.",
-    priceCents: 799,
+    priceCents: 67900,
     stockQty: 84,
     specs: {
       "Connector": "USB-C to USB-C",
@@ -530,7 +530,7 @@ const products: ProductSeed[] = [
     shortDescription: "120-piece male/female jumper wire set.",
     description:
       "120 jumper wires in male-to-male, male-to-female and female-to-female variants — the wires you'll reach for on literally every breadboard session.",
-    priceCents: 599,
+    priceCents: 50900,
     stockQty: 220,
     isFeatured: true,
     specs: {
@@ -548,7 +548,7 @@ const products: ProductSeed[] = [
     shortDescription: "Break-away straight and right-angle headers.",
     description:
       "Break-away 0.1\" pitch headers in straight and right-angle styles, male and female — snap off exactly the length you need for any board you're building.",
-    priceCents: 499,
+    priceCents: 41900,
     stockQty: 190,
     specs: {
       "Pitch": "2.54 mm (0.1\")",
@@ -565,7 +565,7 @@ const products: ProductSeed[] = [
     shortDescription: "5.5x2.1mm barrel jack to screw terminal adapters.",
     description:
       "Barrel jack to screw-terminal adapters so any 5.5x2.1mm wall adapter can power a bare board or breadboard project without splicing a single wire.",
-    priceCents: 349,
+    priceCents: 29900,
     stockQty: 150,
     specs: {
       "Jack Size": "5.5 x 2.1 mm",
@@ -584,7 +584,7 @@ const products: ProductSeed[] = [
     shortDescription: "600-piece resistor kit, 30 common values.",
     description:
       "600 resistors spanning 30 of the most commonly used values, sorted and labeled in a storage case — the resistor drawer every bench should have.",
-    priceCents: 1099,
+    priceCents: 92900,
     stockQty: 132,
     isFeatured: true,
     specs: {
@@ -603,7 +603,7 @@ const products: ProductSeed[] = [
     shortDescription: "Assorted ceramic capacitors, 24 values.",
     description:
       "An assortment of ceramic capacitors across 24 common values for decoupling, filtering and timing circuits, in a labeled storage case.",
-    priceCents: 899,
+    priceCents: 75900,
     stockQty: 145,
     specs: {
       "Piece Count": "480",
@@ -620,7 +620,7 @@ const products: ProductSeed[] = [
     shortDescription: "Radial electrolytic capacitors, common values.",
     description:
       "Radial electrolytic capacitors across the values you'll use most for power-supply smoothing and bulk decoupling on every board you build.",
-    priceCents: 799,
+    priceCents: 67900,
     stockQty: 118,
     specs: {
       "Piece Count": "120",
@@ -637,7 +637,7 @@ const products: ProductSeed[] = [
     shortDescription: "Radial inductors for filtering and converter builds.",
     description:
       "A set of radial inductors covering the common values needed for switching regulator and RF filtering projects, labeled and sorted by value.",
-    priceCents: 999,
+    priceCents: 84900,
     stockQty: 76,
     specs: {
       "Piece Count": "100",
@@ -654,7 +654,7 @@ const products: ProductSeed[] = [
     shortDescription: "Panel-mount rotary potentiometers with knobs.",
     description:
       "Three panel-mount rotary potentiometers with matching knobs — volume controls, brightness dimmers or any analog input a project calls for.",
-    priceCents: 599,
+    priceCents: 50900,
     stockQty: 160,
     specs: {
       "Values": "10kΩ",
@@ -673,7 +673,7 @@ const products: ProductSeed[] = [
     shortDescription: "Compact geared DC motor for small robots.",
     description:
       "A compact geared DC motor with a 100:1 gear ratio for high torque at low speed — the standard choice for small two-wheeled robot chassis.",
-    priceCents: 349,
+    priceCents: 29900,
     stockQty: 180,
     isFeatured: true,
     specs: {
@@ -692,7 +692,7 @@ const products: ProductSeed[] = [
     shortDescription: "Micro servo for precise 180° positioning.",
     description:
       "A lightweight micro servo delivering reliable 180° positioning — pan-tilt camera mounts, robot arms and RC projects all lean on this workhorse.",
-    priceCents: 449,
+    priceCents: 37900,
     stockQty: 210,
     specs: {
       "Rotation": "180°",
@@ -710,7 +710,7 @@ const products: ProductSeed[] = [
     shortDescription: "Standard stepper for 3D printers and CNC builds.",
     description:
       "A standard NEMA17-frame stepper motor with the torque and step accuracy that 3D printer and small CNC builders rely on.",
-    priceCents: 1299,
+    priceCents: 109900,
     stockQty: 62,
     specs: {
       "Frame Size": "NEMA17",
@@ -728,7 +728,7 @@ const products: ProductSeed[] = [
     shortDescription: "Drive two DC motors forward, reverse and PWM speed.",
     description:
       "A dual H-bridge driver board that lets a microcontroller run two DC motors independently in both directions with PWM speed control — the bridge between logic-level pins and real motor current.",
-    priceCents: 599,
+    priceCents: 50900,
     stockQty: 138,
     specs: {
       "Channels": "2",
@@ -746,7 +746,7 @@ const products: ProductSeed[] = [
     shortDescription: "2WD acrylic chassis with wheels and hardware.",
     description:
       "A laser-cut acrylic 2WD chassis with wheels, mounting hardware and a battery bay — the frame for your first (or fiftieth) rolling robot.",
-    priceCents: 1499,
+    priceCents: 126900,
     stockQty: 55,
     specs: {
       "Drive": "2WD",
@@ -765,7 +765,7 @@ const products: ProductSeed[] = [
     shortDescription: "Full-size solderless breadboard.",
     description:
       "A full-size 830 tie-point solderless breadboard with reliable spring contacts and color-coded power rails — the foundation of every prototyping session.",
-    priceCents: 599,
+    priceCents: 50900,
     stockQty: 260,
     isFeatured: true,
     specs: {
@@ -783,7 +783,7 @@ const products: ProductSeed[] = [
     shortDescription: "Auto-ranging multimeter with continuity beeper.",
     description:
       "An auto-ranging digital multimeter covering voltage, current, resistance, continuity and diode test — the one tool that belongs on every bench, full stop.",
-    priceCents: 2499,
+    priceCents: 211900,
     stockQty: 70,
     isFeatured: true,
     specs: {
@@ -802,7 +802,7 @@ const products: ProductSeed[] = [
     shortDescription: "Temperature-controlled iron with tip set and stand.",
     description:
       "A temperature-controlled soldering iron with a set of interchangeable tips, brass-wool cleaner and stand — everything needed to start soldering cleanly out of the box.",
-    priceCents: 3499,
+    priceCents: 296900,
     stockQty: 48,
     specs: {
       "Power": "60W",
@@ -819,7 +819,7 @@ const products: ProductSeed[] = [
     shortDescription: "Dual alligator-clip stand with magnifier.",
     description:
       "A weighted dual alligator-clip stand with a swing-arm magnifying glass — holds boards steady for soldering without a third hand.",
-    priceCents: 1199,
+    priceCents: 101900,
     stockQty: 66,
     specs: {
       "Clips": "2 alligator clips",
@@ -836,7 +836,7 @@ const products: ProductSeed[] = [
     shortDescription: "Self-adjusting wire stripper for 10-24 AWG.",
     description:
       "A self-adjusting wire stripper and cutter covering 10-24 AWG, so you get a clean strip length every time without nicking the conductor.",
-    priceCents: 1299,
+    priceCents: 109900,
     stockQty: 90,
     specs: {
       "Wire Range": "10–24 AWG",
@@ -887,6 +887,7 @@ async function main() {
         shortDescription: product.shortDescription,
         description: product.description,
         priceCents: product.priceCents,
+        currency: "inr",
         isFeatured: Boolean(product.isFeatured),
         images: JSON.stringify([`/images/products/${product.slug}.jpg`]),
         specs: JSON.stringify(product.specs),
@@ -900,6 +901,7 @@ async function main() {
         shortDescription: product.shortDescription,
         description: product.description,
         priceCents: product.priceCents,
+        currency: "inr",
         stockQty: product.stockQty,
         isFeatured: Boolean(product.isFeatured),
         images: JSON.stringify([`/images/products/${product.slug}.jpg`]),

@@ -44,7 +44,7 @@ model Product {
   shortDescription String
   description      String
   priceCents       Int
-  currency         String  @default("usd")
+  currency         String  @default("inr")
   stockQty         Int     @default(0)
   images           String // JSON-encoded string[]
   specs            String // JSON-encoded { [key]: string }
@@ -92,7 +92,7 @@ model Order {
   subtotalCents Int
   shippingCents Int
   totalCents    Int
-  currency      String @default("usd")
+  currency      String @default("inr")
 
   stripeCheckoutSessionId String? @unique
   stripePaymentIntentId   String?

@@ -38,7 +38,7 @@ export async function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white">
       <div className="bg-navy px-4 py-2 text-center text-xs text-white/80 sm:px-8">
-        Free shipping on orders over $150 &middot; Original, tested components
+        Free shipping on orders over ₹999 &middot; Original, tested components
       </div>
 
       <div className="border-b border-navy/10 px-4 py-3 sm:px-8">
