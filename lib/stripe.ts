@@ -1,11 +1,19 @@
 import "server-only";
 import Stripe from "stripe";
 
-const secretKey = process.env.STRIPE_SECRET_KEY;
-if (!secretKey) {
-  throw new Error("STRIPE_SECRET_KEY is not set");
-}
+let client: Stripe | undefined;
 
-export const stripe = new Stripe(secretKey, {
-  apiVersion: "2026-08-26.dahlia",
-});
+// Created lazily so a missing key fails the request that needs Stripe,
+// not `next build` (which imports route modules while collecting page data).
+export function getStripe(): Stripe {
+  if (!client) {
+    const secretKey = process.env.STRIPE_SECRET_KEY;
+    if (!secretKey) {
+      throw new Error("STRIPE_SECRET_KEY is not set");
+    }
+    client = new Stripe(secretKey, {
+      apiVersion: "2026-08-26.dahlia",
+    });
+  }
+  return client;
+}

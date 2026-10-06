@@ -2,7 +2,7 @@
 
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
-import { stripe } from "@/lib/stripe";
+import { getStripe } from "@/lib/stripe";
 import { getCurrentUser } from "@/lib/auth";
 import { getOrCreateCart, computeCartTotals } from "@/lib/cart";
 import { generateOrderNumber } from "@/lib/orders";
@@ -58,7 +58,7 @@ export async function createCheckoutSession(
 
   let session;
   try {
-    session = await stripe.checkout.sessions.create({
+    session = await getStripe().checkout.sessions.create({
       mode: "payment",
       customer_email: user.email,
       line_items: cart.items.map((item) => ({
