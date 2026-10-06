@@ -875,6 +875,8 @@ async function main() {
     const categoryId = categoryIdBySlug.get(product.categorySlug);
     if (!categoryId) throw new Error(`Unknown category slug: ${product.categorySlug}`);
 
+    // stockQty is only set on create: the seed runs on every deploy, and
+    // re-applying it would wipe out stock decremented by real orders.
     await prisma.product.upsert({
       where: { slug: product.slug },
       update: {
@@ -885,7 +887,6 @@ async function main() {
         shortDescription: product.shortDescription,
         description: product.description,
         priceCents: product.priceCents,
-        stockQty: product.stockQty,
         isFeatured: Boolean(product.isFeatured),
         images: JSON.stringify([`/images/products/${product.slug}.jpg`]),
         specs: JSON.stringify(product.specs),
