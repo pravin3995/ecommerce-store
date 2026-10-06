@@ -4,7 +4,7 @@ A full-stack electronics-components e-commerce store: real product database,
 persistent per-account cart, authentication, order history, and Stripe
 Checkout payments.
 
-Built with Next.js 14 (App Router, TypeScript), Prisma + SQLite, custom
+Built with Next.js 14 (App Router, TypeScript), Prisma + PostgreSQL, custom
 JWT-cookie auth, Tailwind CSS, and Stripe.
 
 This is an **original demo storefront** with a fictional brand and catalog —
@@ -26,10 +26,18 @@ cp .env.example .env
 
 ### Database
 
+Needs a PostgreSQL database — a free Neon database (Vercel → Storage), Supabase,
+or a local Postgres all work. Put its connection string in `.env` as
+`DATABASE_URL`, then:
+
 ```bash
-npx prisma migrate dev --name init   # already run once; re-run is a no-op if up to date
-npm run db:seed                      # seeds 8 categories, 42 products, and a demo account
+npx prisma migrate deploy   # creates the tables
+npm run db:seed             # seeds 8 categories, 42 products, and a demo account
 ```
+
+`npm run build` also runs `prisma migrate deploy`, so deploys pick up new
+migrations automatically. Seeding is a one-off — it isn't part of the build,
+because re-running it would reset product stock levels.
 
 Demo login: **demo@voltrix.test** / **voltrixdemo**
 
@@ -102,9 +110,9 @@ tests/e2e/      Playwright
 
 ## Design decisions worth knowing about
 
-- **SQLite via Prisma** — a real relational database with migrations, zero
-  external service to stand up. `prisma/dev.db` (gitignored); inspect it
-  directly with `sqlite3 prisma/dev.db`.
+- **PostgreSQL via Prisma** — originally SQLite, moved to Postgres so the
+  app can run on serverless hosts like Vercel, which have no persistent
+  filesystem. Browse the data with `npm run db:studio`.
 - **Custom auth, not NextAuth** — signed JWT in an httpOnly cookie
   (`lib/auth.ts`), verified in `middleware.ts` (Edge-compatible via `jose`).
   Chosen over NextAuth v5 to avoid depending on a still-beta API.

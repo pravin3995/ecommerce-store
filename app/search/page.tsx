@@ -5,17 +5,16 @@ import { ProductCard } from "@/components/product/ProductCard";
 export default async function SearchPage({ searchParams }: { searchParams: { q?: string } }) {
   const query = (searchParams.q ?? "").trim();
 
-  // SQLite's Prisma provider has no case-insensitive `contains` mode, and the
-  // catalog is small, so filter case-insensitively in-process instead.
   let products: Awaited<ReturnType<typeof prisma.product.findMany>> = [];
   if (query) {
-    const needle = query.toLowerCase();
-    const all = await prisma.product.findMany({ where: { isActive: true } });
-    products = all
-      .filter((p) =>
-        [p.name, p.brand, p.sku, p.shortDescription].some((field) => field.toLowerCase().includes(needle))
-      )
-      .slice(0, 40);
+    const match = { contains: query, mode: "insensitive" as const };
+    products = await prisma.product.findMany({
+      where: {
+        isActive: true,
+        OR: [{ name: match }, { brand: match }, { sku: match }, { shortDescription: match }],
+      },
+      take: 40,
+    });
   }
 
   return (

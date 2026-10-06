@@ -1,5 +1,5 @@
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -7,8 +7,8 @@ generator client {
   provider = "prisma-client-js"
 }
 
-// SQLite has no native enum support in Prisma — these are plain strings,
-// validated/typed at the application layer (see lib/constants.ts):
+// Plain strings rather than Prisma enums (kept from the original SQLite
+// schema), validated/typed at the application layer (see lib/constants.ts):
 //   Role: "CUSTOMER" | "ADMIN"
 //   OrderStatus: "PENDING" | "PAID" | "FULFILLED" | "CANCELLED"
 
